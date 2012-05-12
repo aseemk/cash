@@ -1,0 +1,13 @@
+{ "name": "cash"
+, "author": "Aseem Kishore <aseem.kishore@gmail.com>"
+, "description": "CoffeeScript shell language. Like Bash, but Cash."
+, "version": "0.0.0"
+, "main": "lib/"
+, "dependencies": {}
+, "devDependencies": {}
+, "optionalDependencies": {}
+, "scripts": {}
+, "engines":
+  { "node": "*"
+  }
+}
