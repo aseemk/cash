@@ -3,7 +3,7 @@
 , "description": "CoffeeScript shell language. Like Bash, but Cash."
 , "version": "0.0.0"
 , "main": "lib/"
-, "bin": "bin/cash"
+, "bin": "bin/cash.js"
 , "dependencies":
   { "coffee-script": "~1.3.3"
   , "streamline": "~0.3.6"
