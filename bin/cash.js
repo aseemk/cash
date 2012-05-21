@@ -8,7 +8,4 @@ var path = require('path');
 var fs   = require('fs');
 var lib  = path.join(path.dirname(fs.realpathSync(__filename)), '..', 'lib');
 
-// XXX FIXME how to compile coffeescript JIT during development?
-require('coffee-script');
-
 require(path.join(lib, 'command')).run();

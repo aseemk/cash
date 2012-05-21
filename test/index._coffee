@@ -4,7 +4,7 @@ Path = require 'path'
 
 # Constants:
 
-CASH_PATH = Path.normalize Path.join __dirname, '..', 'bin', 'cash.js'
+CASH_PATH = Path.normalize Path.join __dirname, '..', 'bin', 'cash-dev.js'
 TEST_ROOT = Path.join "#{__dirname}", 'test'
 
 
