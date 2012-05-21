@@ -5,7 +5,6 @@ Path = require 'path'
 # Constants:
 
 CASH_PATH = Path.normalize Path.join __dirname, '..', 'bin', 'cash-dev.js'
-TEST_ROOT = Path.join "#{__dirname}", 'test'
 
 
 # Helpers:
@@ -22,7 +21,7 @@ CP.execFile = (file, args=[], opts={}, callback) ->
 
 # Executes the test with the given name:
 execTest = (test, _) ->
-    testPath = Path.join TEST_ROOT, test
+    testPath = Path.join __dirname, test
     CP.execFile CASH_PATH, [testPath], {pipe: true}, _
 
 execTest 'misc', _
