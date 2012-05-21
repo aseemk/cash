@@ -1,0 +1,7 @@
+#!/usr/bin/env cash
+
+should = require 'should'
+
+# test that echo exists and works:
+# TODO how to programmatically test this?
+echo 'Echo test passed!'

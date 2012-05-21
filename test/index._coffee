@@ -24,4 +24,8 @@ execTest = (test, _) ->
     testPath = Path.join __dirname, test
     CP.execFile CASH_PATH, [testPath], {pipe: true}, _
 
+
+# Tests:
+
 execTest 'misc', _
+execTest 'echo', _
