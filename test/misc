@@ -1,2 +1,12 @@
+#!/usr/bin/env cash
 
-console.error 'Running misc!'
+should = require 'should'
+
+# test process props set correctly:
+# TODO how to test that __filename and __dirname are set correctly?
+process.argv.should.have.length 2
+process.argv[0].should.equal 'cash'
+process.argv[1].should.equal __filename
+process.execPath.should.match /\/cash(-dev)?\.js$/
+
+console.log 'Misc tests passed!'
